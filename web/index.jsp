@@ -14,8 +14,13 @@
 $END$
 <%!
     String name = "Zack";
+
     String getName() {
         return name;
+    }
+
+    int add(int x, int y) {
+        return x + y;
     }
 %>
 <%
@@ -25,5 +30,8 @@ $END$
     arrayList.add("Hello JSP");
     System.out.println(111);
 %>
+<%--表达式--%>
+你好，<%=name%>
+x+y=<%=add(10, 12)%>
 </body>
 </html>
