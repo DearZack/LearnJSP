@@ -12,8 +12,15 @@
 </head>
 <body>
 $END$
+<%!
+    String name = "Zack";
+    String getName() {
+        return name;
+    }
+%>
 <%
     //"这里可以写Java逻辑
+    out.println(getName());
     ArrayList<String> arrayList = new ArrayList<>();
     arrayList.add("Hello JSP");
     System.out.println(111);
