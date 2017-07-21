@@ -33,5 +33,22 @@ $END$
 <%--表达式--%>
 你好，<%=name%>
 x+y=<%=add(10, 12)%>
+
+<h1>九九乘法表</h1>
+<%=createTable()%>
+<%!
+    String createTable() {
+        String result = "";
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j <= i ; j++) {
+                result += i + " * " + j + " = " + i * j + "&nbsp;&nbsp;&nbsp;&nbsp;";
+            }
+            result += "<br>";
+        }
+        return result;
+    }
+
+
+%>
 </body>
 </html>
