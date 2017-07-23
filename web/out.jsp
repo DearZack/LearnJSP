@@ -13,7 +13,6 @@
 <body>
 <%
     out.println("床前明月光");
-    out.println("疑是地上霜");
 %>
 
 </body>
